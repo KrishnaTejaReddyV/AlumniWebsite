@@ -1,0 +1,453 @@
+<html>
+<head>
+
+	<title>
+		VITAA 
+	</title>
+		
+	
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+
+</head>
+	
+<style>
+	
+		#section1 h2{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 80px;
+		color: #fff;
+	}
+	
+	#section2 h2{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 80px;
+		color: #fff;
+	}
+	
+	#section5 h4{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 80px;
+	}
+
+	#section2 p{
+		margin-top:7%;
+		font-size:15px;
+		color: white;
+	}
+	
+	#section5{
+		background-image:url("ok.jpg");
+		background-size: 100% 110%;
+	}
+	
+	#section2{
+		background-image:url("okay.png");
+		
+	}
+	
+	#section6{
+		background-image:url("vol.jpg");
+		background-size: 100% 120%;
+	}
+	
+	#section2 ul{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 170px;
+		color: #fff;
+	}
+	
+	#section1 table{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 150px;
+		color: #fff;
+	}
+	
+	#section5 #colors{
+		left: 60px;
+		bottom: 0;
+	}
+	
+	#section5 p{
+		color: #757575;
+	}
+	
+	#colors2,
+	#colors5{
+		position: absolute;
+		height: 163px;
+		width: 362px;
+		z-index: 1;
+		background-repeat: no-repeat;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+	
+	#colors2{
+		background-image: url(imgs/colors2.gif);
+		top:0;
+	}
+	
+	#colors5{
+		background-image: url(imgs/colors3.gif);
+		bottom:0;
+	}
+
+	</style>
+	
+	<script type="text/javascript">
+	
+		$(document).ready(function() {
+	
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+			    sectionsColor: ['#bdbdbd', 'white', 'white', '#39C','white','#2C3E50'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4','page5','page6']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+
+
+			/*
+		    * Internal use of the demo website
+		    */
+		    $('#showExamples').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				$('#examplesList').toggle();
+			});
+
+			$('html').click(function(){
+				$('#examplesList').hide();
+			});
+	    });
+    
+	</script>
+
+</head>
+
+<body>
+	
+	<ul id="menu">
+		
+		<li data-menuanchor="page1" class="active"><a href="#page1">Office Bearers</a></li>
+		<li data-menuanchor="page2"><a href="#page2">VITAA Chapters</a></li>
+		<li data-menuanchor="page3"><a href="#page3">News</a></li>
+		<li data-menuanchor="page4"><a href="#page4">About VITAA</a></li>
+		<li data-menuanchor="page5"><a href="#page5">VIT Corpus Fund</a></li>
+		<li data-menuanchor="page6"><a href="#page6">Volunteer</a></li>
+		<li><a href="../../Home/index.html">Home</a></li>
+		
+	</ul>
+	
+
+	<div id="pagepiling">
+	
+	    <div class="section pp-scrollable"  id="section1" >
+			
+			<div class="row"  style="margin-top:5%" >
+    
+				<div class="col s12">
+      
+					<ul class="tabs z-depth-2">
+        
+						<li class="tab col s3"><a href="#test1" class="active" style="color:black;font-size:13px">Board Members</a></li>
+						<li class="tab col s3"><a  href="#test2" style="color:black;font-size:13px">Core Committee</a></li>
+						<li class="tab col s3"><a href="#test3" style="color:black;font-size:13px">Chapter Development & Activity Cell</a></li>
+						<li class="tab col s3"><a href="#test4" style="color:black;font-size:13px">Career Cell Co-ordinator</a></li>
+					</ul>
+				
+				</div>
+				<div id="test1" class="col s12" style="color:black;"><br><br>Test 1</div>
+				<div id="test2" class="col s12" style="color:black;"><br><br>Test 2</div>
+				<div id="test3" class="col s12" style="color:black;"><br><br>Test 3</div>
+				<div id="test4" class="col s12"style="color:black;"><br><br>Test 4</div>
+			
+			</div>
+        
+	    </div>
+	    
+		<div class="section pp-scrollable" id="section2" >
+		
+	    	<div class="intro">
+			
+	    		<p> Over the years VITAA has spread its network over various 
+				cities in India and across the globe. The first chapter was inaugurated at 
+				Chennai during the year 1997. This was followed by other chapters at Bangalore, 
+				Hyderabad, Chittoor, Calcutta and Delhi. International Chapters were also developed 
+				and inaugurated by our beloved Chancellor during his visits to various countries like 
+				Singapore, Australia, Germany, USA & Rwanda.
+				</p>
+				
+				<h4 style="color:white">Chapter Development & Activity Cell</h4>
+												
+					<!-- Modal Trigger -->
+					<div class="row">
+				
+						<div class="col s3">
+						
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:0%;margin-top:4%">VITAA-VIT</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:0%;margin-top:1%">VITAA Chennai</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:0%;margin-top:1%">VITAA Chicago</a><br>			
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:0%;margin-top:1%">VITAA Ireland</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:0%;margin-top:1%">VITAA Texas</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Sweden</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Atlanta</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Bangalore</a>					
+						
+						</div>
+					
+						<div class="col s3">
+						
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:4%">VITAA Kolkata</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Melbourne</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Mumbai</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Muscat</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA New York</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Pudducherry</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Pune</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Qatar</a><br>
+							
+						</div>
+					
+						<div class="col s3">
+							
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:4%">VITAA California</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Canad</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Chittoor</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Cognizant Chennai</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Coimbatore</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Delhi</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Germany</a>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:1%">VITAA Hyderabad</a>
+					
+						</div>
+					
+						<div col="s3">
+					
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.7%">VITAA Rwanda</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA Salem</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA Singapore</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA Sydney</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA UAE</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA UK</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA Vellore</a><br>
+							<a class="modal-trigger waves-effect waves-light btn" href="#modal1" style="margin-left:5%;margin-top:0.3%">VITAA Washington DC</a><br>
+							
+						</div>
+					
+					</div>
+
+			</div>
+		
+		</div>
+		
+		
+		<!------------------------------------------------ Modal Structure --------------------------------------------------------------->
+		
+		<div id="modal1" class="modal modal-fixed-footer" >
+		
+			<div class="modal-content" >
+			
+				<p>Modal Header. A bunch of text</p>
+							
+			</div>
+						
+			<div class="modal-footer">
+						
+				<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+						
+			</div>
+		
+		</div>
+		
+			<!----------------------------------------------end of modal structure-------------------------------------------------------->		
+							
+
+		
+		<div class="section" id="section3">
+		
+	    	<div class="intro">
+			
+				<div class="slider">
+					
+					<ul class="slides">
+					
+					<li>
+        				<div class="caption center-align">
+							
+							<h3>This is our big Tagline!</h3>
+							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						
+						</div>
+					
+					</li>
+					
+					<li>
+						
+						<div class="caption left-align">
+							
+							<h3>Left Aligned Caption</h3>
+							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						
+						</div>
+      
+					</li>
+      
+					<li>
+        
+						<div class="caption right-align">
+          
+							<h3>Right Aligned Caption</h3>
+							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        
+						</div>
+      
+					</li>
+					
+					<li>
+						
+						<div class="caption center-align">
+							
+							<h3>This is our big Tagline!</h3>
+							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					
+						</div>
+					
+					</li>
+					
+					</ul>
+				
+				</div>
+			
+	    	</div>
+	    
+		</div>
+	    
+		<div class="section" id="section4">
+	    	
+			<div class="intro">
+	    		
+				<h1>Compatible</h1>
+	    		<p>Designed to work on tablet and mobile devices.</p>
+	    		
+				<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
+	    	
+			</div>
+	    
+		</div>
+		
+		<div class="section" id="section5">
+			
+			<h4 style="color:white">VIT Corpus Fund - an invitation to make a meaningful difference</h4><br><br><br><br>
+			
+			<div class="row" style="margin-left:40%;width:80%">
+				
+				<div class="col s12 m5">
+
+					<div class="card-panel deep-purple lighten-1">
+					
+						<span class="white-text" style="font-size:18px">VIT Corpus fund is used to meet the cost of books, tuition fees and living expenses of the needy students in the University. Let us give back to the cradle that nurtured us, whatever we can, whenever we can. Your contribution makes a big difference!
+       					</span>
+						
+					</div>
+						  
+				</div>
+			
+			</div>
+						
+			<div class="row">
+     
+				<div class="card deep-purple lighten-1" style="width:40%;margin-left:5%">
+    
+					<div class="card-content">
+					  
+						<span class="card-title activator white-text text-white" style="font-size:18px">VIT alumni members are requested to donate generously and support the various initiatives for the upliftment of the society.<i class="material-icons right">more_vert</i></span>
+					
+					</div><br>
+					
+					<div class="card-reveal deep-purple lighten-1">
+						
+						<span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+						<p style="font-size:15px;color:white">Please contact VITAA Office for further details.<br><br>Email: alumni@vit.ac.in<br><br>Please click here to know the details about the beneficiaries of this award.</p>
+					
+					</div>
+				
+				</div>
+						 
+			</div>
+            
+        </div>
+	    
+		<div class="section" id="section6">
+	    	
+			<div class="intro">
+	    	   		
+
+	    	</div>
+	    
+		</div>
+	
+	</div>
+
+<script>
+  $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+	
+	$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+        $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+  
+ $(document).ready(function(){
+    $('.modal-trigger').leanModal(
+	
+	);
+  });
+</script>
+	
+<script src="js/materialize.min.js"></script>
+<script src="js/materialize.min.1.js"></script>
+
+</body>
+
+</html>

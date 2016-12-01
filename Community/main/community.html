@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>VITAA | Community</title>
+	
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="../jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.pagepiling.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+	
+	<style>
+	
+		#section1 h2{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 80px;
+		color: #fff;
+	}
+	
+	
+	
+	#section2 h2{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 80px;
+		color: #fff;
+	}
+	
+		#section2 ul{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 170px;
+		color: #fff;
+	}
+	
+	#section1 table{
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		top: 150px;
+		color: #fff;
+	}
+	#section5 #colors{
+		left: 60px;
+		bottom: 0;
+	}
+	#section5 p{
+		color: #757575;
+	}
+	#colors2,
+	#colors5{
+		position: absolute;
+		height: 163px;
+		width: 362px;
+		z-index: 1;
+		background-repeat: no-repeat;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+	}
+	#colors2{
+		background-image: url(imgs/colors2.gif);
+		top:0;
+	}
+	#colors5{
+		background-image: url(imgs/colors3.gif);
+		bottom:0;
+	}
+
+	</style>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+			    sectionsColor: ['white', '#bdbdbd', 'white', '#39C','#2C3E50','#2C3E50'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4','page5','page6']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+
+
+			/*
+		    * Internal use of the demo website
+		    */
+		    $('#showExamples').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				$('#examplesList').toggle();
+			});
+
+			$('html').click(function(){
+				$('#examplesList').hide();
+			});
+	    });
+    </script>
+
+</head>
+<body>
+	<ul id="menu">
+		
+		<li data-menuanchor="page1" class="active"><a href="#page1">Newsletter</a></li>
+		<li data-menuanchor="page2"><a href="#page2">Distinguished Alumni</a></li>
+		<li data-menuanchor="page3"><a href="#page3">Achievments</a></li>
+		<li data-menuanchor="page4"><a href="#page4">Scholarship</a></li>
+		<li data-menuanchor="page5"><a href="#page5">Blog</a></li>
+		<li data-menuanchor="page6"><a href="#page6">Discussion Board</a></li>
+		<li><a href="../../Home/index.html">Home</a></li>
+		
+	</ul>
+	
+
+	<div id="pagepiling">
+	
+	    <div class="section pp-scrollable"  id="section1" >
+	    	
+			<h2 style="color:gray">Newsletter Archive</h2>
+			<table style="color:black" class="container highlight bordered centered responsive-table">
+        <thead >
+          <tr >
+              <th  data-field="id" style="width:20%">Date</th>
+              <th data-field="name">Title</th>
+              <th data-field="price" style="width:20%">View</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>9-11-2016</td>
+            <td>VITAA 2nd Quarterly e-newsletter - TRACKS (April – June 2016 edition)</td>
+            <td>View Online</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr><tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+		  <tr>
+            <td></td>
+            <td></td>
+            <td>View Online</td>
+          </tr>
+        </tbody>
+      </table>
+
+	    </div>
+	    
+		<div class="section pp-scrollable" id="section2" >
+		
+	    	<div class="intro">
+			
+	    		
+				
+					<h2 style="color:black">Find Our Achievers</h2>
+												<ul class="collapsible container" data-collapsible="accordion" style="color:black">
+								<li>
+								  <div class="collapsible-header">2016</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2015</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2014</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2013</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2012</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2011</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2010</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2009</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2008</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2007</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2006</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2005</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2004</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2003</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2002</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2001</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">2000</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">1999</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+								<li>
+								  <div class="collapsible-header">1998</div>
+								  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+								</li>
+							  </ul>
+						
+			</div>
+		
+		</div>
+		
+		<div class="section" id="section3">
+		
+	    	<div class="intro">
+			
+				<div class="slider">
+					
+					<ul class="slides">
+					<li>
+        				<div class="caption center-align">
+							
+							<h3>This is our big Tagline!</h3>
+							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						
+						</div>
+					
+					</li>
+					
+					<li>
+						
+						<div class="caption left-align">
+							
+							<h3>Left Aligned Caption</h3>
+							<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+						
+						</div>
+      </li>
+      <li>
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+			
+	    	
+
+				
+	    	</div>
+	    </div>
+	    <div class="section" id="section4">
+	    	<div class="intro">
+	    		<h1>Compatible</h1>
+	    		<p>Designed to work on tablet and mobile devices.</p>
+	    		<p>Oh! And its compatible with old browsers such as IE 8 or Opera 12!</p>
+	    	</div>
+	    </div>
+		 <div class="section" id="section5">
+	    	<div class="intro">
+	    		<h3>Please go to our Login page to access Blogs</h3><br>
+					    		<a class="waves-effect waves-light btn" href="../../Login/login.html">ALUMNI LOGIN</a>
+
+	    		<div id="colors2"></div>
+	    		<div id="colors5"></div>
+	    	</div>
+	    </div>
+	    <div class="section" id="section6">
+	    	<div class="intro">
+	    		<div id="colors2"></div>
+					    		<div id="colors5"></div>
+
+	    		<h3>Please go to our Login page to access Discussion Board</h3><br>
+	    		<a class="waves-effect waves-light btn" href="../../Login/login.html">ALUMNI LOGIN</a>
+
+	    	</div>
+	    </div>
+	</div>
+<script>
+  $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+	
+	$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+       
+	</script>
+</body>
+</html>
