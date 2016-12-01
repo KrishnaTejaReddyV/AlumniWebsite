@@ -34,11 +34,16 @@ ul {
 ul li {
   list-style: none;
 }
+#nav:hover,
+#nav:focus {
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+}
 a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
-  color: #fff;
 }
 .section {
   padding: 90px 0;
@@ -76,6 +81,7 @@ a:focus {
 .navbar-fixed-top {
   padding: 15px 0;
 }
+
 .affix {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -84,7 +90,7 @@ a:focus {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   padding: 0!important;
-  background: #3f51b5 !important;
+  background: #009688 !important; /*#00b5a4*/
 }
 .sticky-navigation .row {
   padding: 0;
@@ -556,7 +562,7 @@ a:focus {
 }
 #other-features .features-content:hover i,
 #other-features .features-content:hover h3 {
-  color: #3f51b5;
+  color: #009688;
 }
 #other-services {
   padding-bottom: 35px;

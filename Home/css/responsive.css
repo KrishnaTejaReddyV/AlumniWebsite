@@ -130,23 +130,23 @@
 }
 @media (max-width: 640px) and (min-width: 960px) {
   .navbar-header {
-    width: 100px;
+    width: 100%;
     float: left;
     padding-left: 7px !important;
   }
   .navbar-right {
     float: right;
-    width: 100px;
+    width: 100%;
   }
 }
-@media (max-width: 767px) and (min-width: 479px) {
+@media (max-width: 2000px) and (min-width: 479px) {
   .navbar-header {
-    width: 100px;
+    width: 100%;
     float: left;
     padding-left: 7px !important;
   }
   .navbar-right {
     float: right;
-    width: 100px;
+    width: 100%;
   }
 }
