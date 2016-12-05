@@ -1,3 +1,66 @@
+$(window).resize(function(){
+if($(window).width()<500)
+  {
+	$('.nav-text').css('font-size','10px');
+	$('.info').css('margin-left','30%');
+	$('.info1').css('margin-left','30%');
+	$('.info1').css('margin-top','5%');
+	$('.find').css('margin-left','20%');
+	$('.find1').css('margin-left','10%');
+
+}
+else if($(window).width()<700)
+  {
+	$('.nav-text').css('font-size','15px');
+	$('.info').css('margin-left','5%');
+	$('.info1').css('margin-left','0%');
+	$('.info1').css('margin-top','0%');
+	$('.find').css('margin-left','30%');
+	$('.find1').css('margin-left','5%');
+}
+else 
+  {
+	$('.nav-text').css('font-size','20px');
+	$('.info').css('margin-left','5%');
+	$('.info1').css('margin-left','0%');
+	$('.info1').css('margin-top','0%');
+	$('.find').css('margin-left','43%');
+	$('.find1').css('margin-left','3%');
+}
+});
+
+$(document).ready(function(){
+if($(window).width()<500)
+  {
+	$('.nav-text').css('font-size','10px');
+	$('.info').css('margin-left','30%');
+	$('.info1').css('margin-left','30%');
+	$('.info1').css('margin-top','5%');
+	$('.find').css('margin-left','20%');
+	$('.find1').css('margin-left','10%');
+
+}
+else if($(window).width()<700)
+  {
+	$('.nav-text').css('font-size','15px');
+	$('.info').css('margin-left','5%');
+	$('.info1').css('margin-left','0%');
+	$('.info1').css('margin-top','0%');
+	$('.find').css('margin-left','30%');
+	$('.find1').css('margin-left','5%');
+}
+else 
+  {
+	$('.nav-text').css('font-size','20px');
+	$('.info').css('margin-left','5%');
+	$('.info1').css('margin-left','0%');
+	$('.info1').css('margin-top','0%');
+	$('.find').css('margin-left','43%');
+	$('.find1').css('margin-left','3%');
+}
+});
+
+
 
 jQuery(function($) {
 
