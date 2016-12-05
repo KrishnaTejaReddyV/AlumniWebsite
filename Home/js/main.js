@@ -44,6 +44,8 @@ if($(window).width()<500)
 	$('.info1').css('margin-top','5%');
 	$('.find').css('margin-left','20%');
 	$('.find1').css('margin-left','10%');
+	$('.navfb').hide();
+	$('#why').hide();
 
 }
 else if($(window).width()<700)
@@ -54,6 +56,8 @@ else if($(window).width()<700)
 	$('.info1').css('margin-top','0%');
 	$('.find').css('margin-left','30%');
 	$('.find1').css('margin-left','5%');
+	$('.navfb').show();
+	$('#why').show();
 }
 else 
   {
@@ -63,6 +67,8 @@ else
 	$('.info1').css('margin-top','0%');
 	$('.find').css('margin-left','43%');
 	$('.find1').css('margin-left','3%');
+	$('.navfb').show();
+	$('#why').show();
 }
 });
 
